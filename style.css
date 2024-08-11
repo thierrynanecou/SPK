@@ -1,0 +1,264 @@
+/* Reset */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    font-family: "Raleway", sans-serif;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Assure que le body prend au moins la hauteur de la vue */
+}
+
+/* Main Content */
+main {
+    flex: 1; /* Assure que le main prend l'espace restant */
+    padding: 20px; /* Ajoute du padding pour l'espacement */
+}
+
+/* Centering the .lettre class */
+.lettre {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0; /* Ajoute une marge verticale pour l'espacement */
+}
+
+.lettre img {
+    max-width: 100%; /* Assure que l'image est responsive */
+    height: auto; /* Maintient le ratio de l'image */
+    border-radius: 5px; /* Optionnel : ajoute un border-radius */
+}
+
+/* Links */
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    color: red;
+}
+
+/* Buttons */
+button {
+    border: 0;
+    outline: none;
+    font-family: inherit;
+    font-size: inherit;
+    cursor: pointer;
+}
+
+/* Navbar */
+.navbar {
+    height: 90px;
+    background-color: black;
+    padding: 10px 20px; /* Réduit le padding pour ajuster la hauteur */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .logo {
+    display: flex;
+    align-items: center;
+}
+
+.navbar .logo img {
+    height: 45px; /* Ajuste la hauteur de l'image du logo */
+    width: auto; /* Maintient le ratio de l'image */
+    margin-right: 8px; /* Ajuste l'espacement entre l'image et le texte du logo */
+}
+
+.navbar .logo a {
+    font-size: 22px; /* Ajuste la taille du texte du logo */
+    font-weight: 700;
+    color: white;
+}
+
+/* Menu */
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 24px; /* Ajuste l'espace entre les éléments du menu */
+}
+
+.menu-links {
+    display: flex;
+    gap: 24px;
+    border-right: 1px solid white;
+    padding-inline: 24px;
+}
+
+.menu-links a {
+    font-weight: 500;
+    color: white;
+    padding: 8px 16px;
+}
+
+.menu-links a:hover {
+    color: white;
+    background-color: red;
+}
+
+.menu-btn {
+    font-size: 32px;
+    color: white;
+    display: none;
+    cursor: pointer;
+}
+
+@media (max-width: 53rem) {
+    .menu {
+        display: none;
+    }
+
+    .menu-btn {
+        display: block;
+    }
+}
+
+/* Title Contact */
+.title-contact {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Form */
+form {
+    background-color: black;
+    padding: 20px;
+    border-radius: 5px;
+    margin: 20px auto;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    color: white;
+    display: block;
+    margin-bottom: 5px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #333;
+    color: white;
+}
+
+button {
+    background-color: #5cb85c;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #4cae4c;
+}
+
+.back-home {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    color: white;
+}
+
+.back-home:hover {
+    color: red;
+}
+
+/* Footer */
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0; /* Ajoute du padding autour du footer */
+    margin-top: auto; /* Pousse le footer vers le bas de la page */
+}
+
+/* Contenu du footer */
+.footer-content {
+    display: flex;
+    flex-wrap: wrap; /* Permet aux sections de passer à la ligne si nécessaire */
+    justify-content: space-between; /* Espacement entre les sections */
+    align-items: flex-start; /* Aligner les sections en haut */
+    padding: 0 20px; /* Ajoute du padding horizontal */
+}
+
+/* Sections du footer */
+.contact-info,
+.address,
+.social-media {
+    margin: 0 20px; /* Espacement entre les sections */
+    flex: 1; /* Permet aux sections de s'ajuster en largeur */
+}
+
+.contact-info h1,
+.address h2,
+.social-media h3 {
+    font-size: 1.5em; /* Taille des titres */
+    margin-bottom: 10px; /* Espacement sous les titres */
+}
+
+.contact-info p,
+.address p {
+    font-size: 15px; /* Taille du texte */
+    margin: 5px 0; /* Espacement autour des paragraphes */
+}
+
+.contact-info a,
+.address a {
+    color: white;
+    text-decoration: none;
+}
+
+.contact-info a:hover,
+.address a:hover {
+    color: red;
+}
+
+/* Réseaux sociaux */
+.Title-Reseau{
+    margin-top: 20px;
+}
+.social-media h3 {
+    margin-bottom: 10px; /* Espacement sous le titre des réseaux sociaux */
+}
+
+.social-media a {
+    color: white;
+    font-size: 15px; /* Taille des icônes */
+    text-decoration: none;
+    margin-right: 15px; /* Espacement entre les icônes */
+}
+
+.social-media a:hover {
+    color: red;
+}
+
+/* Lien "Nous contacter" */
+.contact-link {
+    color: white;
+    font-size: 0.9em; /* Réduit la taille du texte */
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+.contact-link:hover {
+    color: red;
+}
