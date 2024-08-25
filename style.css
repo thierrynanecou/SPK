@@ -302,11 +302,11 @@ button:hover {
 
 /* Style des images dans les cartes */
 .card img {
-  width: 80%; /* Ajuste l'image à la largeur de la carte */
+  width: auto; /* Ajuste l'image à la largeur de la carte */
   height: auto; /* Hauteur automatique pour garder les proportions */
-  max-height: 60%; /* Limite la hauteur de l'image */
+  max-height: 80%; /* Limite la hauteur de l'image */
   border-radius: 20px; /* Bordure arrondie pour les images */
-  margin-bottom: 10px; /* Espace entre l'image et le texte */
+  
 }
 
 .summer-stage {
@@ -353,4 +353,13 @@ button:hover {
   height: auto; /* Maintient les proportions de l’image */
   border-radius: 10px; /* Ajoute un bord arrondi aux images */
   margin: 10px 0; /* Ajoute de l’espace entre les images et le texte */
+}
+
+/* Section Inscription et Tarifs */
+
+.summer-stage embed {
+  width: 100%; /* Ajuste l’élément embed à la largeur du conteneur */
+  max-width: 1000px; /* Limite la largeur maximale de l’élément embed */
+  height: 800px; /* Hauteur automatique pour garder les proportions */
+  border:none;
 }
