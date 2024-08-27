@@ -306,9 +306,9 @@ button:hover {
   height: auto; /* Hauteur automatique pour garder les proportions */
   max-height: 80%; /* Limite la hauteur de l'image */
   border-radius: 20px; /* Bordure arrondie pour les images */
-  
 }
 
+/* Section pour les stages d'été */
 .summer-stage {
   display: flex;
   flex-wrap: wrap; /* Permet de passer à la ligne suivante si l'espace est insuffisant */
@@ -332,6 +332,7 @@ button:hover {
   margin: 10px 0; /* Ajoute de l’espace entre les images et le texte */
 }
 
+/* Section Partenaires Carrousel */
 .partenaires-carroussel {
   display: flex;
   justify-content: center;
@@ -339,6 +340,7 @@ button:hover {
   margin-top: 60px;
 }
 
+/* Section Horaires */
 .horaires {
   display: flex;
   flex-wrap: wrap; /* Permet de passer à la ligne suivante si l'espace est insuffisant */
@@ -356,10 +358,46 @@ button:hover {
 }
 
 /* Section Inscription et Tarifs */
-
 .summer-stage embed {
   width: 100%; /* Ajuste l’élément embed à la largeur du conteneur */
   max-width: 1000px; /* Limite la largeur maximale de l’élément embed */
   height: 800px; /* Hauteur automatique pour garder les proportions */
   border:none;
+}
+
+/* Ajout des sections pour les stages et les événements */
+.summer-stage-inscription, .summer-stage-evenements {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+  justify-content: center;
+}
+
+/* Styles spécifiques pour les items d'inscription */
+.summer-stage-inscription .stage-item {
+  background-color: #222;
+  padding: 20px;
+  border-radius: 15px;
+  color: white;
+}
+
+.summer-stage-inscription img {
+  max-width: 400px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+/* Styles spécifiques pour les items des événements */
+.summer-stage-evenements .stage-item {
+  background-color: #444;
+  padding: 20px;
+  border-radius: 15px;
+  color: white;
+}
+
+.summer-stage-evenements img {
+  max-width: 400px;
+  border-radius: 10px;
+  margin-bottom: 10px;
 }
