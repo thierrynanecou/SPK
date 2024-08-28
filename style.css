@@ -287,9 +287,8 @@ button:hover {
 
 /* Style des cartes */
 .card {
-  border-radius: 25px; /* Bordure arrondie */
-  border: 2px solid #fff; /* Contour blanc */
-  background-color: #d3d3d3; /* Couleur de fond gris clair */
+ 
+  
   padding: 20px; /* Espace à l'intérieur des cartes */
   text-align: center; /* Centrer le texte à l'intérieur de la carte */
   display: flex;
